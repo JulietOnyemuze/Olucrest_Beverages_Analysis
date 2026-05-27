@@ -1,29 +1,28 @@
-# Olucrest_Beverages_Analysis
-## Project Overview
-This project analyses the sales performance, profit margins, and operational damage losses of Olucrest Beverages, a fictional Nigerian beverage distribution company modelled after a real-world business. The company distributes products from major FMCG brands including Coca-Cola, Chivita, Vitamilk, C-Way, and Lucozade across 6 branches in Nigeria.
-The dataset was fully simulated, cleaned, and validated before being modelled and visualised in a 3-page Power BI dashboard designed to support management decision-making.
-### Tools Used:
-* SQL Server - Data cleaning and validation
-* Power BI Desktop - Data modelling, DAX measures & dashboard design
-The goal of this project was to....
+# Olucrest Beverages — Revenue, Margin & Damage Analytics
+## Project Summary
+This project analyses the operations of Olucrest Beverages, a fictional Nigerian beverage distribution company modelled after a real-world business. The company distributes products from major FMCG brands including Coca-Cola, Chivita, Vitamilk, C-Way and Lucozade across 6 branches in Nigeria.
+The dataset was simulated to reflect realistic FMCG distribution scenarios, cleaned entirely in SQL Server, and visualised in a 3-page Power BI dashboard. The goal was to identify where profitability was being lost across damage, margins, and seasonal demand, and translate those findings into actionable business decisions.
 ## Problem Statement
-* No visibility into which products are actually profitable vs just high in revenue
-* Demand that shifts heavily by season, making poor stock planning expensive
-* Branch performance varying significantly with no clear understanding of what is driving the gap
-* Pricing competitiveness, when suppliers run promotional pricing to other distributors, Olucrest risks losing customers to competitors selling at lower prices, with no way to monitor or respond to market price shifts
-* Stock getting damaged in transit, by staff, or due to poor packaging, with no way to recover that loss
+Beverage distributors operate on thin margins, and most of what eats into profit is invisible on a standard sales report. For Olucrest Beverages, the key business questions were:
+* Which products are actually profitable versus just popular?
+* How much money is being lost to damaged stock, and why is it happening?
+* Are supplier promotions helping or hurting profitability?
+* Are their branches performing equally or not?
+* Are supplier promotions helping or hurting profitability?
 ## Data Source and Methodology
-I created the data myself using....
-### Dataset Design
-Five tables were designed to mirror a real distribution company's data structure:
-| Table | Description
-|-------|------------|
-| sales_table | Sales transactions across all branches and products
-| damage_table | Product damage records by branch, product and cause
-| pricing_table | Monthly pricing per product with supplier promo data
-| product_table | Product reference data; brand, category, packaging, incentive rates
-| branches_table | Branch reference data; location, vehicle availability, storage capacity
+### Data Source
+The dataset was fully simulated to reflect realistic Nigerian FMCG distribution operations. Business context was gathered from a real beverage distributor, and the data was intentionally generated with common real-world data quality issues to demonstrate end-to-end data cleaning skills.
+
+| Table | Rows | Description
+|-------|------|------------|
+| sales_table | 798 | Sales transactions across all branches and products
+| damage_table | 300 | Product damage records by branch, product and cause
+| pricing_table | 144 | Monthly pricing per product with supplier promo data
+| product_table | 12 | Product details including brand, category and incentive rates
+| branches_table | 7 | Branch details including location and vehicle availability and storage capacity
 ### Data Cleaning & Validation (SQL)
+
+
 
 
 ## Key Insights and Visualization
