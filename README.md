@@ -21,8 +21,28 @@ The dataset was fully simulated to reflect realistic Nigerian FMCG distribution 
 | product_table | 12 | Product details including brand, category and incentive rates
 | branches_table | 7 | Branch details including location and vehicle availability and storage capacity
 ### Data Cleaning & Validation (SQL)
-
-
+14 issues were resolved across the 5 tables:
+| Table | Issue Identified | Fix Applied
+|-------|------------------|------------|
+| branches_table | Mixed formats in has_vehicle (YES/Y/yes/NO/N/no) | Standardised to 'Yes' / 'No' using CASE
+| branches_table | Text embedded in storage_capacity_cartons ('1200 cartons') | Stripped text, replaced empty values with column average, converted to INT
+| branches_table | Missing location value for branch B3 | Filled with known value 'Aba'
+| products_table | Inconsistent brand name formatting ('COCA-COLA', 'Coca Cola') | Standardised using CASE
+| products_table | % symbol in incentive_rate_percent ('5%') | Stripped symbol, converted to DECIMAL
+| products_table | 'units' text in units_per_carton ('12 units') | Stripped text, converted to INT
+| products_table | Missing category value for product P2 | Filled with known value 'Carbonated'
+| pricing_table | Inconsistent month names ('JAN', 'JANUARY', 'january') | Standardised to full name using CASE
+| pricing_table | Mixed formats in supplier_promo (YES/Y/NO/N) | Standardised to 'Yes' / 'No' using CASE
+| pricing_table | Empty strings in promo_buy_price_naira | Converted to NULL
+| damage_table | Inconsistent damage_cause casing + typo ('SUPLIER') | Standardised and corrected using CASE
+| damage_table | Currency symbol encoding error in damage_value_naira ('â‚¦2400') | Stripped symbol, converted to DECIMAL
+| damage_table | Empty strings in damage_cause and units_damaged | Replaced with 'Unknown' and NULL respectively
+| damage_table | Duplicate damage records | Removed using ROW_NUMBER() CTE
+| sales_table | Five different date formats in one column | Standardised to YYYY-MM-DD using CONVERT, converted to DATE type
+| sales_table | Conflicting duplicate records (T350, T704 — same ID, different dates) | Both rows deleted; correct record could not be determined
+| sales_table | Simple duplicate records | Removed using ROW_NUMBER() CTE
+| sales_table | Empty branch_id values | Replaced with 'B-Unknown'; matching row added to dim_branches
+| sales_table | Empty units_sold values | Converted to 0
 
 
 ## Key Insights and Visualization
