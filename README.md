@@ -69,11 +69,6 @@ FROM [cloutsaas].[dbo].branches_table_dirty;
 #### Query 2: Handling duplicate records in fact_sales
 Duplicates were removed using a ROW_NUMBER() CTE, keeping only the first occurrence of each transaction.
 ``` sql
--- Step 1: Delete conflicting duplicates (same ID, different data — both dropped)
-DELETE FROM fact_sales_clean
-WHERE transaction_id IN ('T350', 'T704');
-
--- Step 2: Remove remaining simple duplicates (keep first occurrence only)
 WITH duplicates AS (
     SELECT *,
         ROW_NUMBER() OVER (
