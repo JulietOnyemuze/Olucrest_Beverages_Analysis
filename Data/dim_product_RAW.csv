@@ -1,0 +1,13 @@
+product_id,product_name,brand,category,packaging_type,incentive_rate_percent,units_per_carton
+P1,Coke 50cl,COCA-COLA,Carbonated,Bottle,5.00%,12 units
+P10,Lucozade Boost,LUCOZADE,Energy,Bottle,7,12
+P11,Chivita Exotic,Chivita,Juice,Carton,20,24
+P12,Vitamilk Banana,Vitamilk,Juice,Bottle,18,12 units
+P2,Coke 1L,Coca-Cola,,Bottle,5.00%,12
+P3,Chivita Orange,Chivita ,Juice,Carton,8.00%,24
+P4,Chivita Apple,chivita,Juice,Carton,9,24
+P5,Vitamilk Classic,VITAMILK,Juice,Bottle,12,12 units
+P6,Vitamilk Strawberry,Vitamilk,Juice,Bottle,,12 units
+P7,C-Way Sachet,C-Way,Water,Sachet,3,30 units
+P8,C-Way Bottle,C-WAY,Water,Bottle,4.00%,12
+P9,Lucozade Orange,lucozade,Energy,Bottle,6.00%,12
