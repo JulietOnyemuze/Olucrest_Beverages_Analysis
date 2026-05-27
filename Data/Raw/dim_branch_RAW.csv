@@ -1,0 +1,8 @@
+branch_id,branch_name,location,state,has_vehicle,storage_capacity_cartons
+B1,Ikeja Hub,Ikeja,Lagos ,Yes,1200 cartons
+B2,Onitsha Depot,Onitsha,ANAMBRA,NO,
+B3,Aba Central,,ABIA,N,700 cartons
+B4,Enugu Point,Enugu,Enugu,YES,650 cartons
+B5,PH Main,Port Harcourt,RIVERS,YES,1500 cartons
+B6,Warri Link,Warri,Delta,No,600 cartons
+Unknown,Unknown,Unknown,Unknown,Unknown,
