@@ -80,7 +80,7 @@ WITH duplicates AS (
 DELETE FROM duplicates
 WHERE row_num > 1;
 ```
-*Full cleaning scripts for all 5 tables: sql/data_cleaning.sql*
+*Full cleaning scripts for all 5 tables: [sql/data_cleaning.sql](https://github.com/JulietOnyemuze/Olucrest_Beverages_Analysis/tree/main/SQL%20scripts)*
 ## Key Insights and Visualization
 ### Overview
 * Revenue is growing month on month (+2.6%) but profit margin is declining (-0.4%), the business is selling more but keeping less of each naira earned
