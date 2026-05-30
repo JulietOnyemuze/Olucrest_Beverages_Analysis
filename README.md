@@ -11,7 +11,7 @@ Beverage distributors operate on thin margins, and most of what eats into profit
 * Are supplier promotions helping or hurting profitability?
 ## Data Source and Methodology
 ### Data Source
-The dataset was fully simulated to reflect realistic Nigerian FMCG distribution operations. Business context was gathered from a real beverage distributor, and the data was intentionally generated with common real-world data quality issues to demonstrate end-to-end data cleaning skills.
+The dataset was fully simulated to reflect realistic FMCG distribution operations. Business context was gathered from a real beverage distributor, and the data was intentionally generated with common real-world data quality issues to demonstrate end-to-end data cleaning skills.
 
 | Table | Rows | Description
 |-------|------|------------|
