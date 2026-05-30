@@ -1,7 +1,7 @@
 # Olucrest Beverages — Revenue, Margin & Damage Analytics
 ## Project Summary
 This project analyzes the operations of Olucrest Beverages, a fictional beverage distribution company modelled after a real-world business. The company distributes products from major FMCG brands including Coca-Cola, Chivita, Vitamilk, C-Way and Lucozade across 6 branches.
-The dataset was simulated to reflect realistic FMCG distribution scenarios, cleaned entirely in SQL Server, and visualised in a 3-page Power BI dashboard. The goal was to identify where profitability was being lost across damage, margins, and seasonal demand, and translate those findings into actionable business decisions.
+The dataset was simulated to reflect realistic FMCG distribution scenarios, cleaned entirely in SQL Server, and visualized in a 3-page Power BI dashboard. The goal was to identify where profitability was being lost across damage, margins, and seasonal demand, and translate those findings into actionable business decisions.
 ## Problem Statement
 Beverage distributors operate on thin margins, and most of what eats into profit is invisible on a standard sales report. For Olucrest Beverages, the key business questions were:
 * Which products are actually profitable versus just popular?
